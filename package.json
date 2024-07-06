@@ -1,0 +1,19 @@
+{
+  "name": "techstack-e-commerce-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FasilAbriha/TechStack-e-commerce-website.git"
+  },
+  "author": "Fasil Guesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FasilAbriha/TechStack-e-commerce-website/issues"
+  },
+  "homepage": "https://github.com/FasilAbriha/TechStack-e-commerce-website#readme",
+  "description": ""
+}
