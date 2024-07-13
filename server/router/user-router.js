@@ -1,17 +1,19 @@
 const express = require("express");
-const { registerUsers, loginUsers, userStatus, logoutUsers } = require("../controllers/user-controller");
+const { registerUsers, loginUsers, userStatus, logoutUsers } = require("../controller/user-controller");
+const tokenHandler = require("../middleware/tokenHandler");
+
 const router = express.Router();
 
+
 // Registration route
-router.post("/register", registerUsers);
+router.route("/Register").post(registerUsers);
 
-// Login route
-router.post("/login", loginUsers);
 
-// User status route
-router.get("/status", userStatus);
+router.route("/Login").post(loginUsers);
 
-// Logout route
-router.post("/logout", logoutUsers);
+
+router.route("/Status/Status").get(tokenHandler,userStatus);
+
+router.route("/logout").post(logoutUsers);
 
 module.exports = router;
