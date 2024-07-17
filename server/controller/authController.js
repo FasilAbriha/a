@@ -2,7 +2,7 @@
 
 const crypto = require('crypto');
 const bcrypt = require('bcrypt');
-const User = require('../models/User');
+const User = require('../model/user-model');
 const nodemailer = require('nodemailer');
 
 // Send password reset email
