@@ -28,6 +28,7 @@ exports.sendPasswordResetEmail = async (req, res) => {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
       }
+      
     });
 
     const mailOptions = {
@@ -46,6 +47,7 @@ exports.sendPasswordResetEmail = async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
+  
 };
 
 // Reset password
